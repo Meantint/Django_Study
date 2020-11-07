@@ -6,7 +6,7 @@
 # 함수형 : request를 매개변수로 받고(추가 매개변수 가능), 모양은 함수
 #		  내가 원하는대로 동작들을 설계하고 만들고 싶을 때 사용한다.
 
-# 클래스형 : CRUD(Create, R, Update, Delete) 기존에 많이 사용하는 기능을 미리 클래스로 만들어두고
+# 클래스형 : CRUD(Create, Read, Update, Delete) 기존에 많이 사용하는 기능을 미리 클래스로 만들어두고
 #			상속받아서 사용한다.
 #			보통 클래스형을 많이 씀(제네릭 뷰가 편하기 때문에)
 
@@ -41,7 +41,7 @@ def welcome(request):
 # 템플릿 이용
 def template_test(request):
     # 기본 템플릿 폴더
-    # 1. admin 앱
+    # 1. admin 앱 (기본적 설치)
     # 2. 각 앱의 폴더에 있는 templates 폴더
     # 3. 우리가 설정한 폴더
     return render(request, 'test.html')
